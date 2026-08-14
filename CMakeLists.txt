@@ -5,15 +5,19 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Emnet krever at koden er ren under -Wall -Wextra.
+# The course wants the code clean under -Wall -Wextra.
 add_compile_options(-Wall -Wextra)
 
-add_subdirectory(ovinger/oving-01)
-add_subdirectory(ovinger/oving-02)
-add_subdirectory(ovinger/oving-03)
-add_subdirectory(ovinger/oving-04)
-add_subdirectory(ovinger/oving-05)
-add_subdirectory(ovinger/oving-06)
-add_subdirectory(ovinger/oving-07)
-add_subdirectory(ovinger/oving-08)
-add_subdirectory(ovinger/oving-09)
+add_subdirectory(exercises/exercise-01)
+add_subdirectory(exercises/exercise-02)
+add_subdirectory(exercises/exercise-03)
+add_subdirectory(exercises/exercise-04)
+add_subdirectory(exercises/exercise-05)
+add_subdirectory(exercises/exercise-06)
+add_subdirectory(exercises/exercise-07)
+add_subdirectory(exercises/exercise-08)
+add_subdirectory(exercises/exercise-09)
+
+# exercise-10 is not built here. It replaces main.cpp in
+# gitlab.com/ntnu-iini4003/game and needs that repo's sfml, glm, bullet and
+# imgui setup.
