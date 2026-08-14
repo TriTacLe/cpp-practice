@@ -9,3 +9,4 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_compile_options(-Wall -Wextra)
 
 add_subdirectory(ovinger/oving-01)
+add_subdirectory(ovinger/oving-02)
